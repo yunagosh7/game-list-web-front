@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-title {
+  font-size: 1.4rem;
+  text-align: center;
+  
+}
