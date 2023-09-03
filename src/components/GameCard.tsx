@@ -9,9 +9,13 @@ type GameCardProps = {
 function GameCard({game}: GameCardProps) {
   return (
     <div className='game-card'>
-      <h3 className="game-title">{game.title}</h3>
       <img className="game-img" src={game.image} alt={game.title} />
-      <p className="game-desc">{game.desc}</p>
+      <div className="game-data-container">
+        <h3 className="game-title">{game.title}</h3>
+        <p className="game-desc">{game.desc}</p>
+        <h4 className='game-platform'>{game.platform}</h4>
+        <h4>{game.genre}</h4>
+      </div>
     </div>
   )
 }

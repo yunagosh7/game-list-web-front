@@ -1,7 +1,10 @@
 interface GameResponse {
+  id: number;
   title: string;
   short_description: string;
   thumbnail: string;
+  platform: string;
+  genre: string;
 }
 
 interface Game {
@@ -9,6 +12,8 @@ interface Game {
   title: string;
   image: string;
   desc: string;
+  platform: string;
+  genre: string;
 } 
 
 export {

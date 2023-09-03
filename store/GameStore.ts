@@ -25,7 +25,10 @@ export const useGameStore = create<GameStore>()((set) => ({
       const game: Game = {
         title: gameResponse.title,
         desc: gameResponse.short_description,
-        image: gameResponse.thumbnail
+        image:  gameResponse.thumbnail,
+        genre: gameResponse.genre,
+        id: gameResponse.id,
+        platform: gameResponse.platform 
       }
       games.push(game)
     })
